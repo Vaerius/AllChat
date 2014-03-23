@@ -15,10 +15,9 @@ namespace AllChat
         [STAThread]
         static void Main()
         {
-            Controll control = new Controll();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain(control));
+            Application.Run(new frmMain());
             
         }
     }

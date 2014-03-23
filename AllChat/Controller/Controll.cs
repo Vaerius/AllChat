@@ -13,7 +13,8 @@ namespace AllChat.Controller
 
         public Controll()
         {
-            login = Login.getLogin;
+            login = new Login();
+            
         }
 
         public void DoLogin(string username, string userpass)
