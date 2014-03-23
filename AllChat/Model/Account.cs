@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AllChat.Model
 {
-    class Account
+    public class Account
     {
         private int accountId;
         private string accountName;

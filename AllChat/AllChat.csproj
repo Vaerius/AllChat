@@ -32,8 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,14 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\AccountDAO.cs" />
-    <Compile Include="Database\AccountDAOImpl.cs" />
-    <Compile Include="Database\Connection.cs" />
-    <Compile Include="Database\UserDAO.cs" />
-    <Compile Include="Database\UserDAOImpl.cs" />
-    <Compile Include="Database\User_AccountsDAOImpl.cs" />
-    <Compile Include="Database\User_Accounts_DAO.cs" />
-    <Compile Include="Control\Login.cs" />
+    <Compile Include="Database\allchatDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>allchatDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\Controll.cs" />
+    <Compile Include="Controller\Login.cs" />
+    <Compile Include="Database\Dbase.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\User_Accounts.cs" />
@@ -75,6 +80,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Database\allchatDataSet.xsc">
+      <DependentUpon>allchatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database\allchatDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>allchatDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database\allchatDataSet.xss">
+      <DependentUpon>allchatDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
