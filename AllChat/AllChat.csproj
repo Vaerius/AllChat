@@ -63,9 +63,27 @@
     <Compile Include="LoginControl.Designer.cs">
       <DependentUpon>LoginControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainScreenControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainScreenControl.Designer.cs">
+      <DependentUpon>MainScreenControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\User_Accounts.cs" />
+    <Compile Include="PersonControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonControl.Designer.cs">
+      <DependentUpon>PersonControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RedLineControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RedLineControl.Designer.cs">
+      <DependentUpon>RedLineControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +94,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LoginControl.resx">
       <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreenControl.resx">
+      <DependentUpon>MainScreenControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonControl.resx">
+      <DependentUpon>PersonControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
