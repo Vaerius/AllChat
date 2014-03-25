@@ -88,7 +88,7 @@
             // 
             this.loginControl1.Location = new System.Drawing.Point(118, 113);
             this.loginControl1.Name = "loginControl1";
-            this.loginControl1.Size = new System.Drawing.Size(316, 211);
+            this.loginControl1.Size = new System.Drawing.Size(434, 211);
             this.loginControl1.TabIndex = 1;
             // 
             // frmMain
